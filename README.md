@@ -68,3 +68,4 @@ import settings
 connection = sqlite3.connect('db.sqlite3'))
 
 connection.close()
+
