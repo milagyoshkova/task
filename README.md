@@ -34,7 +34,7 @@ HTTPCACHE_STORAGE = 'scrapy_sqlite.httpcache.SQLiteCacheStorage'
 # Enables gzip compression of responses. If response are already recieved compressed (recommended and very used feature by webservers), it compresses response second time
 HTTPCACHE_GZIP = True
 
-Step 2: Add SQLiteMixin to Spider.
+ Add SQLiteMixin to Spider.
 Example: multidomain_spider.py
 from scrapy.contrib.spiders import CrawlSpider
 from scrapy_sqlite.spiders import SQLiteMixin
@@ -42,13 +42,11 @@ from scrapy_sqlite.spiders import SQLiteMixin
 class MultiDomainSpider(SQLiteMixin, CrawlSpider):
     name = 'multidomain'
 
-    def parse(self, response):
-        # parse all the things
-        pass
+ 
 
-Step 3: Run spider using scrapy client
+ Run spider using scrapy client
 scrapy runspider multidomain_spider.py
-Step 4: Push URLs to SQLite
+ Push URLs to SQLite
 Example: push_web_page_to_queue.py 
 
 
