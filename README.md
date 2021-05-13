@@ -1,4 +1,4 @@
-nstallation
+Installation
 Using pip, type in your command-line prompt
 
 pip install scrapy-sqlite
